@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cdf1deaf66.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="background">
+        <div class="line"></div>
+        <img src="./photos/Group 26.png" id="dc2" style="position: absolute;width: 112.57px;height: 162px;left: 455px;top: 0px;">
+        <div class="lines">
+            <div class="line-4" style="position: relative;left:940px;"></div>
+        </div>
+        <div class="bg">
+            <div class="bg1">
+            </div>
+        </div>        
+    </div>
+    <div class="header">
+        <a href="#" class="logo"> <img src="./photos/logo.png" alt=""> <span>LOGO</span>  </a>
+
+        <nav class="navbar">
+            <a href="home.html" id="home">Home</a>
+            <a href="#houses" id="houses">Houses </a>
+            <a href="#news" id="news">News</a>
+            <a href="#about" id="about">About</a>
+            <a href="#faq" id="faq">FAQ</a>
+            <a href="contact.html" id="contact">Contact</a>
+        </nav>
+
+        <div class="title-3">
+            <img src="./photos/image-news.png" alt="">
+            <h1 >NEWS</h1>
+            <h2 >Your home for all things real estate </h2>
+        </div>
+    </div>
+        
+
+    <div class="lastest_news">
+        <h2>The Lastest</h2>
+        <div id="item1">
+            <img src="./photos/image-1.jpg" style="width: 600px;height: 379px;">
+        </div>
+        <div id="itemleft">
+            <div class="image">
+                <img src="./photos/image-2.jpg" style="position:absolute;left: 720px;top: 585px;">
+                <img src="./photos/image-3.jpg" style="position:absolute;left: 1060px;top: 585px;">
+                <img src="./photos/image-4.jpg" style="position:absolute;left: 720px;top: 935px;">
+            </div>
+
+        </div>
+        <script type="text/javascript">
+            function getNews() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("GET", "https://db-cntt1165-112cd-default-rtdb.europe-west1.firebasedatabase.app/news.json", true);
+                xhttp.send();
+                xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    //In dữ liệu item
+                    let news = JSON.parse(this.responseText);
+                    
+                    const nodeNews = document.createElement("div");
+                    nodeNews.setAttribute("class","item1")
+
+                    //Title
+                    const nodeTitle = document.createElement("div");
+                    nodeTitle.appendChild(document.createTextNode(news.latest[news.latest.length-1].title));
+                    nodeTitle.setAttribute("class","Title1")
+                    nodeNews.append(nodeTitle)
+                    
+
+                    //Author
+                    const nodeAuthor = document.createElement("div");
+                    nodeAuthor.appendChild(document.createTextNode(news.latest[news.latest.length-1].author));
+                    nodeNews.append(nodeAuthor)
+
+                    //Time
+                    const nodeTime = document.createElement("div");
+                    nodeTime.appendChild(document.createTextNode(news.latest[news.latest.length-1].time));
+                    nodeNews.append(nodeTime)
+
+                    document.getElementById("item1").appendChild(nodeNews)
+
+
+                    for (var i = 0; i < news.latest.length-1;i++) {
+
+                        const nodeNews = document.createElement("div");
+                    nodeNews.setAttribute("class","item"+i)
+
+                    //Title
+                    const nodeTitle = document.createElement("div");
+                    nodeTitle.appendChild(document.createTextNode(news.latest[i].title));
+                    nodeTitle.setAttribute("class","Title1")
+                    nodeNews.append(nodeTitle)
+                    
+
+                    //Author
+                    const nodeAuthor = document.createElement("div");
+                    nodeAuthor.appendChild(document.createTextNode(news.latest[i].author));
+                    nodeNews.append(nodeAuthor)
+
+                    //Time
+                    const nodeTime = document.createElement("div");
+                    nodeTime.appendChild(document.createTextNode(news.latest[i].time));
+                    nodeNews.append(nodeTime)
+
+                    document.getElementById("itemleft").appendChild(nodeNews)
+
+                    
+                    }
+                }
+                };
+            }
+                getNews();
+        </script>
+    </div>
+
+    <div class="buying">
+        <h2>BUYING</h2>
+        <div id="buying">
+            <div class="image">
+                <img src="./photos/image-5.jpg" >
+                <img src="./photos/image-6.jpg" style="margin-left: 40px;left:530px">
+                <img src="./photos/image-7.jpg" style="margin-left: 40px;left: 1000px">
+            </div>
+        </div>
+        <script type="text/javascript">
+            function getNews() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("GET", "https://db-cntt1165-112cd-default-rtdb.europe-west1.firebasedatabase.app/news.json", true);
+                xhttp.send();
+                xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    //In dữ liệu item
+                    let news = JSON.parse(this.responseText);
+
+                    for (var i = 0; i < news.buying.length;i++) {
+
+                        const nodeNews = document.createElement("div");
+                    nodeNews.setAttribute("class","item"+i)
+
+                    //Title
+                    const nodeTitle = document.createElement("div");
+                    nodeTitle.appendChild(document.createTextNode(news.buying[i].title));
+                    nodeTitle.setAttribute("class","Title1")
+                    nodeNews.append(nodeTitle)
+                    
+
+                    //Author
+                    const nodeAuthor = document.createElement("div");
+                    nodeAuthor.appendChild(document.createTextNode(news.buying[i].author));
+                    nodeNews.append(nodeAuthor)
+
+                    //Time
+                    const nodeTime = document.createElement("div");
+                    nodeTime.appendChild(document.createTextNode(news.buying[i].time));
+                    nodeNews.append(nodeTime)
+
+                    document.getElementById("buying").appendChild(nodeNews)
+
+                    
+                    }
+                }
+                };
+            }
+                getNews();
+        </script>
+
+    </div>
+
+    <div class="homeImprovement">
+        <h2>HOME IMPROVEMENT</h2>
+        <div id="improve">
+            <div class="image">
+                <img src="./photos/image-8.jpg" >
+                <img src="./photos/image-9.jpg" style="margin-left: 40px;left:530px">
+                <img src="./photos/image-10.jpg" style="margin-left: 40px;left: 1000px">
+            </div>
+        </div>
+        <script type="text/javascript">
+            function getNews() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("GET", "https://db-cntt1165-112cd-default-rtdb.europe-west1.firebasedatabase.app/news.json", true);
+                xhttp.send();
+                xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    //In dữ liệu item
+                    let news = JSON.parse(this.responseText);
+
+                    for (var i = 0; i < news.homeImprovement.length;i++) {
+
+                        const nodeNews = document.createElement("div");
+                    nodeNews.setAttribute("class","item"+i)
+
+                    //Title
+                    const nodeTitle = document.createElement("div");
+                    nodeTitle.appendChild(document.createTextNode(news.homeImprovement[i].title));
+                    nodeTitle.setAttribute("class","Title1")
+                    nodeNews.append(nodeTitle)
+                    
+
+                    //Author
+                    const nodeAuthor = document.createElement("div");
+                    nodeAuthor.appendChild(document.createTextNode(news.homeImprovement[i].author));
+                    nodeNews.append(nodeAuthor)
+
+                    //Time
+                    const nodeTime = document.createElement("div");
+                    nodeTime.appendChild(document.createTextNode(news.homeImprovement[i].time));
+                    nodeNews.append(nodeTime)
+
+                    document.getElementById("improve").appendChild(nodeNews)
+
+                    
+                    }
+                }
+                };
+            }
+                getNews();
+        </script>
+
+    </div>
+
+    <div class="footer" style="position: relative; top: 1500px;background-color: #ff8800;height: 160px;display: flex;align-items: center;justify-content: center;padding-bottom: 50px;">
+        <h2>Made by HOÀNG THỊ HỒNG NGỌC | SITDE - NEU</h2> 
+        <div class="socialMedia">
+            <a href="https://www.facebook.com/hoanghongngoc1712"><i class="fa-brands fa-facebook fa-2xl" style="color: #071725;"></i></a>
+        <a href="https://www.instagram.com/hogngoc.hoang/?fbclid=IwAR0EcjQkJj2bae3lbl9tjpLGu8h90caTUFy4KbU3Cv28AUSpLOv3eJa5Dzc"><i class="fa-brands fa-instagram fa-2xl" style="color: #071725;"></i></a>
+        <a href="http://twitter.com/"><i class="fa-brands fa-twitter fa-2xl" style="color: #071725;"></i></a>
+        <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest fa-2xl" style="color: #071725;"></i></a>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

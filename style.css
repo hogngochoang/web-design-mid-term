@@ -1,0 +1,901 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+
+.line {
+    width:409px ;
+    height:22px ;
+    background-color: #ff8800;
+    position: absolute;
+}
+.retangle-1{
+    position: absolute;
+    width: 505px;
+    height: 570px;
+    left: 1031px;
+    top: 190px;
+    background: #071725;
+}
+.line-1{
+    position: absolute;
+    width: 535px;  
+    left: 1001px;
+    top: 161px;
+    border: 1px solid #FF7800;
+}
+.line-2{
+    position: absolute;
+    height: 599px;  
+    left: 1001px;
+    top: 161px;
+    border: 1px solid #FF7800;
+}
+.line-4{
+position: relative;
+width: 90px;
+height: 5px;
+left: 645px;
+top: 90px;
+background: #FF8800;
+border-radius: 5px;
+}
+.line-5{
+    position: absolute;
+width: 19px;
+height: 239px;
+left: 780px;
+top: 467px;
+
+background: #FF7800;
+}
+.background img{
+    background-repeat: no-repeat;
+    position: absolute;
+width: 631px;
+height: 441px;
+left: 816px;
+top: 254px;
+}
+
+#combo{
+    position: absolute; width: 99px; height: 135.62px; left: 745px; top: 145px;
+}
+
+.logo{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #071725;
+    position: absolute;
+width: 160px;
+height: 44px;
+left: 58px;
+top: 56px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:relative;
+    width: 788px;
+    height: 40px;
+    left: 652px;
+    top: 58px;
+
+}
+
+.navbar a{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #071725;
+}
+.navbar a:hover{
+    text-align: center;
+    
+    border: 2px solid #ff8800;
+    border-radius: 10px;
+}
+
+
+.home {
+    position: relative;
+width: 626px;
+height: 345px;
+left: 58px;
+top: 150px;
+}
+.content .title{
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+font-size: 24px;
+line-height: 39px;
+letter-spacing: 0.2em;
+color: #071725;
+padding-bottom: 10px;
+}
+.home  .line-3{
+    position: absolute;
+    width: 290px;
+    height: 1px;
+    left: 330px;
+    top: 20px;
+    border: 1px solid #FF7800;
+}
+.content h1{
+    font-weight: 700;
+font-size: 90px;
+line-height: 70px;
+letter-spacing: 0.05em;
+color: #071725;
+}
+.content h3{
+    position: absolute;
+width: 475px;
+height: 29px;
+top: 330px;
+    font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+display: flex;
+align-items: center;
+color: #848383;
+}
+.home button{
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.05em;
+    color: #071725;
+    position: absolute;
+    width: 201px;
+    height: 66px;
+    left: 0px;
+    top: 400px;
+    background: #FF7800;
+    border-radius: 10px;
+}
+.home button:hover{
+    filter: drop-shadow(0px 5px 5px  rgba(0, 0, 0, 0.5));
+}
+
+
+
+
+/* từ 600px - 1000px*/
+@media only screen and (min-width:600px) and (max-width:1000px) {
+    .background #dc1,#dc2,#dots, .line-1,.line-2,.line-5{
+        display: none;
+    }
+    .header{
+        position: absolute;
+        width: 792px;
+        height: 48px;
+        left:0px;
+        top: 64px;
+        display: flex;
+        flex-direction: row;
+    }
+    .header .navbar{
+        position: absolute;
+        width: 550px;
+        height: 44px;
+        left: 200px;
+        top: 0px;
+    }
+    .header .navbar a{
+        font-size: 22px;
+    }
+    .header .logo img{
+        width: 34px;height: 34px;
+        margin-right: 3px;
+    }
+    .header .logo{
+        position: absolute;
+        width: 100px;
+        height: 50px;
+        left: 10px;
+        top:0px;
+        font-size: 32px;
+    }
+    .content{
+        position: absolute;
+        width: 665px;
+        height: 352px;
+        left: 0px;
+        top: 0px;
+    }
+    .home .line-3{
+        left: 310px;
+        width: 250px;
+    }
+    
+    .content h3{
+        font-size: 24px;
+    }
+    .content h1{
+        font-size: 80px;
+    }
+    .home button{
+        position: absolute;
+    width: 201px;
+    height: 66px;
+    left:0px;
+    top: 930px;
+    }
+    .background #home{
+        position: absolute;
+        width: 630px;
+        height: auto;
+        left: 40px;
+        top: 555px;
+    }
+    .background .retangle-1{
+        position: absolute;
+        width: 450px;
+        height: 515px;
+        left: 300px;
+        top: 535px;
+    }
+    .background #combo{
+        position: absolute;
+        width: 100px;
+        height: auto;
+        left: 650px;
+        top: 130px;
+    }
+
+    .background .line-4{
+        position: absolute;
+        width: 70px;
+        left: 200px;
+        top: 95px;
+    }
+}
+
+
+
+@media only screen and (max-width:600px){
+    .background #dc1,#dc2,#dots,#bg2 ,.navbar #gallery,#faq,#about{
+        display: none;
+    }
+    .line{
+        width: 600px;
+    }
+    .navbar{
+        left: 350px;
+    }
+    .navbar #home, #houses, #contact{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        font-size: 42px;
+    }
+    .navbar #houses{
+        left: 180px;
+    }
+    .navbar #contact{
+        left: 380px;
+    }
+
+   .lines .line-1,.line-2,.line-5{
+        width: 70px;
+        height: 10px;
+        background-color: #071725;
+        border-radius: 5px;
+        position: absolute;
+        left: 970px;
+        top: 55px;
+    }
+    .line-2{
+        top:75px;
+    }
+    .line-5{
+        top: 95px;
+    }
+    .background .line-4{
+        height: 10px;
+        width: 130px;
+        left: 350px;
+        top: 110px;
+    }
+    .content{
+        position: absolute;
+        width: 665px;
+        height: 352px;
+        left: 0px;
+        top: 0px;
+    }
+    .content .title .line-3{
+        left: 400px;
+        width: 400px;
+    }
+     .content h2{
+        font-size: 48px;
+        
+        margin-bottom: 30px;
+    }
+    .content h3{
+        font-weight: 500;
+        position: absolute;
+        
+        width: max-content;
+        left: 0px;
+        top: 430px;
+        font-size: 42px;
+    }
+    .content h1{
+        font-size: 100px;
+        line-height: 61px;
+        height: 100px;
+    }
+    .home button{
+        position: absolute;
+    width: 300px;
+    height: 100px;
+    left:350px;
+    top: 1250px;
+    font-size: 42px;
+    }
+    .background #combo{
+        position: absolute;
+        width: 150px;
+        height: auto;
+        left: 940px;
+        top: 180px;
+    }
+    .background #home{
+        position: absolute;
+        width: 970px;
+        height: auto;
+        left: 50px;
+        top: 700px;
+    }
+    .background .retangle-1{
+        position: absolute;
+        width: 950px;
+        height: 650px;
+        left: 100px;
+        top: 750px;
+    }
+}
+
+/*CONTACT PAGE*/
+
+.background-1 #brand{
+    position: absolute;
+width: 507px;
+height: 50px;
+left: 1000px;
+top: 60px;
+}
+.background-1 .line{
+    left:1125px;
+}
+.retangle-2{
+    position: absolute;
+    width: 540px;
+    height: 386px;
+    top: 373px;
+    background: #071725;
+}
+.retangle-3{
+    position: absolute;
+    width: 316px;
+    height: 179px;
+    left: 312px;
+    top: 135px;
+    background: #071725;
+}
+.title-2 h1{
+    position: absolute;width: 720px;height: 124px;left: 800px;top: 140px;font-size: 98px;line-height: 110px;letter-spacing: 0.05em;color: #071725;
+}
+.title-2 h2{
+    position: absolute;width: 650px;height: 56px;left: 840px;top: 270px;font-weight: 600;font-size: 36px;line-height: 44px;letter-spacing: 0.05em;color: #FF7800;
+}
+.image img{
+    position: absolute;
+    width: 507px;
+    height: 510px;
+    left: 100px;
+    top: 150px;
+}
+.feedback{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    position: absolute;
+    top:380px;
+}
+.feedback .email, .fb{
+    box-sizing: border-box;
+    position: absolute;
+    width: 320px;
+    height: 56px;
+    left: 774px;
+    border: 1px solid #071725;
+}
+.fb{
+    left: 774px;
+    top: 90px;
+}
+.btn{
+    background-color: #FF7800;
+    position: absolute;
+    width: 150px;
+    height: 56px;
+    left: 774px;
+    top: 180px;
+    display: flex;flex-direction: row;justify-content: center;align-items: center; 
+    filter: drop-shadow(0px 5px 5px  rgba(0, 0, 0, 0.5));
+    border-radius: 10px;
+}
+
+.btn img{
+    width: 39px;height:39px; margin-right: 7px;
+}
+.btn input[type=submit]{
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+    color: #071725;
+    background: none;
+}
+.feedback input::placeholder{
+    padding-left: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #071725;
+}
+.home-2 .line-3{
+    position: absolute;width: 340px;left: 960px;top: 500px;border: 1px solid #071725;transform: rotate(-90deg);
+}
+.contact-info{
+    position: absolute;
+    width: 275px;
+    height: 235px;
+    left: 1170px;
+    top: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact-info .phone,.mail,.facebook{
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+}
+.contact-info img{
+    margin-right: 15px;
+}
+.contact-info h2{
+    font-weight: 600;
+}
+
+@media only screen and (max-width:600px){
+    .background-1 #brand{
+        position: absolute;
+    width: auto;
+    height: 60px;
+    left: 830px;
+    top: 100px;
+    }
+    #dc,.image .line-2,.image.line-1{
+        display: none;
+    }
+    .image{
+        position: absolute;
+        top: 100px;
+        width: 500px;
+    }
+    .title-2 h1{
+        position: absolute;
+        left: 730px;
+        top: 300px; 
+        text-align: right; 
+    }
+    .title-2 h2{
+        position: absolute;
+        left: 750px;
+        top: 430px; 
+    } 
+    .home-2 .feedback .email, .fb{
+        position: absolute;
+        width: 650px;
+        height: 100px;
+        left: 700px;
+        top: 170px;
+    }
+    .home-2 .feedback .fb{
+        top:330px;
+    }
+    .home-2 .feedback input::placeholder{
+        font-size: 34px;
+    }
+    .home-2 .feedback .btn{
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        left: 900px;
+        top: 500px;
+    }
+    .btn input[type=submit]{
+        font-size: 38px;
+    }
+    .btn img{
+        width: 52px; height: 52px;
+    }
+    .home-2 .line-3{
+        position: absolute;width: 1300px;left: 70px;top: 1040px;border: 7px solid #071725;transform: rotate(180deg);border-radius: 5px;
+    }
+    .background-1 .retangle-3,.retangle-4,.retangle-5{
+        position: absolute;
+        width: 1000px;
+        height: 1000px;
+        background-color: #071725;
+        top:1180px;
+        left: 290px;
+        border:4px solid #071725;
+    }
+    .background-1 .retangle-4{
+        background-color: #FF8800;
+        top:1150px;
+        left: 260px;  
+    }
+    .background-1 .retangle-5{
+        background-color: #fff;
+        top:1120px;
+        left: 230px;  
+    }
+
+    .contact-info{
+       flex-direction: column;
+       position: absolute;
+       left: 0px;
+       width: 1200px;
+        height: 600px;
+        left: 90px; 
+        top: 1150px;
+    }
+     .contact-info .phone,.mail,.facebook {
+       
+        flex-direction: column;
+        align-items: center;  
+        justify-content: center;
+        
+    }
+    .contact-info img{
+        width: 180px;
+        margin-bottom: 40px;
+    }
+    .contact-info h2{
+        font-weight: 700;
+        font-size: 48px;
+        width: 500px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (min-width:600px) and (max-width:1000px){
+/* CONTACT PAGE */
+    .background-1 #brand{
+        position: absolute;
+    width: auto;
+    height: 60px;
+    left: 830px;
+    top: 100px;
+    }
+    #dc{
+        display: none;
+    }
+    .image{
+        position: absolute;
+        top: 100px;
+        width: 500px;
+    }
+    .title-2 h1{
+        position: absolute;
+        left: 730px;
+        top: 300px; 
+        text-align: right; 
+    }
+    .title-2 h2{
+        position: absolute;
+        left: 750px;
+        top: 430px; 
+    } 
+    .home-2 .feedback .email, .fb{
+        position: absolute;
+        width: 650px;
+        height: 100px;
+        left: 700px;
+        top: 170px;
+    }
+    .home-2 .feedback .fb{
+        top:330px;
+    }
+    .home-2 .feedback input::placeholder{
+        font-size: 34px;
+    }
+    .home-2 .feedback .btn{
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        left: 900px;
+        top: 500px;
+    }
+    .btn input[type=submit]{
+        font-size: 38px;
+    }
+    .btn img{
+        width: 52px; height: 52px;
+    }
+    .home-2 .line-3{
+        position: absolute;width: 1300px;left: 70px;top: 1040px;border: 7px solid #071725;transform: rotate(180deg);border-radius: 5px;
+    }
+    .background-1 .retangle-3{
+        position: absolute;
+        width: 1270px;
+        height: 600px;
+        background-color: #071725;
+        top:1180px;
+        left: 160px;
+    }
+    .background-1 .retangle-4{
+        position: absolute;
+        width: 1270px;
+        height: 600px;
+        background-color: #FF8800;
+        top:1150px;
+        left: 130px;
+        border: 4px solid #071725;
+    }
+    .background-1 .retangle-5{
+        position: absolute;
+        width: 1270px;
+        height: 600px;
+        background-color: #fff;
+        top:1120px;
+        left: 100px;
+        border: 4px solid #071725;
+    }
+
+    .contact-info{
+       flex-direction: row;
+       position: absolute;
+       left: 0px;
+       width: 1200px;
+        height: 300px;
+        left: 90px; 
+        top: 1250px;
+    }
+     .contact-info .phone,.mail,.facebook {
+       
+        flex-direction: column;
+        align-items: center;  
+        
+    }
+    .contact-info img{
+        width: 180px;
+        margin-bottom: 40px;
+    }
+    .contact-info h2{
+        font-weight: 600;
+        font-size: 42px;
+    }
+}
+
+/*NEWS PAGE*/
+.title-3 img{
+    width: 1519px;    
+    height: 250px;
+    margin-top: 135px;
+}
+.title-3 h1{
+    position: absolute;
+width: 651px;
+height: 124px;
+left: 600px;
+top: 200px;
+font-weight: 700;
+font-size: 98px;
+line-height: 156px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.05em;
+
+color: #ff8800;
+
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.755);
+}
+.title-3 h2{
+    position: absolute;
+width: 1000px;
+height: 54px;
+left: 320px;
+top: 340px;
+
+font-weight: 600;
+font-size: 48px;
+line-height: 78px;
+display: flex;
+align-items: center;
+letter-spacing: 0.05em;
+
+color: #071725;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.lastest_news h2{
+    position: absolute;
+width: 372px;
+height: 78px;
+left: 60px;
+top: 470px;
+background-color: #071725;
+border-radius: 10px;
+font-weight: 600;
+font-size: 48px;
+line-height: 78px;
+display: flex;
+align-items: center;
+justify-content: center;
+letter-spacing: 0.05em;
+color: #ff8800;
+}
+#item1{
+    position: relative;
+    top:150px;
+    left: 60px; 
+    width: 600px;
+}
+#item1 .Title1{
+    width: 600px; 
+    color: #071725;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#itemleft .Title1{
+    width: 290px; 
+    color: #071725;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#itemleft .image img{
+    width: 290px;height: 162px;
+}
+#itemleft .item0{
+    position:absolute;left: 720px;top: 750px;
+}
+#itemleft .item1{
+    position:absolute;left: 1060px;top: 750px;
+}
+#itemleft .item2{
+    position:absolute;left: 720px;top: 1100px;
+}
+
+.buying h2{
+    position: absolute;
+width: 300px;
+height: 78px;
+left: 630px;
+top: 1300px;
+border:5px solid #ff8800;
+border-radius: 10px;
+font-weight: 700;
+font-size: 48px;
+line-height: 78px;
+display: flex;
+align-items: center;
+justify-content: center;
+letter-spacing: 0.05em;
+color: #071725;
+}
+#buying .image img{
+    width: 400px; height: 220px;  
+}
+#buying .image{
+    position: relative;
+    top: 400px;
+    width: 1280px;
+}
+#buying .Title1{
+    width: 400px; 
+    color: #071725;
+    font-weight: 700;
+    font-size: 20px;
+}
+#buying{
+    text-align: center;
+}
+#buying .item0{
+    position:absolute;left:100px;top: 1700px;
+}
+#buying .item1{
+    position:absolute;left: 1040px;top: 1700px;
+    
+}
+#buying .item2{
+    position:absolute;left: 570px;top: 1700px;
+}
+.homeImprovement h2{
+    position: relative;
+width: 700px;
+height: 78px;
+left: 450px;
+top: 980px;
+border:5px solid #ff8800;
+border-radius: 10px;
+font-weight: 700;
+font-size: 48px;
+line-height: 78px;
+display: flex;
+align-items: center;
+justify-content: center;
+letter-spacing: 0.05em;
+color: #071725;
+}
+#improve .image img{
+    width: 400px; height: 220px;  
+}
+#improve .image{
+    position:relative;
+    top: 910px;
+    width: 1280px;
+}
+#improve .Title1{
+    width: 400px; 
+    color: #071725;
+    font-weight: 700;
+    font-size: 20px;
+}
+#improve{
+    text-align: center;
+}
+#improve .item0{
+    position:absolute;left:100px;top: 2290px;
+}
+#improve .item1{
+    position:absolute;left: 1040px;top: 2290px;
+    
+}
+#improve .item2{
+    position:absolute;left: 570px;top: 2290px;
+}
+.socialMedia{
+   position: absolute;
+   top: 100px;
+}
+.footer i{
+    width: 70px;
+    height: 50px;
+
+}
+

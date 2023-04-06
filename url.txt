@@ -1,0 +1,2 @@
+Link CSDL: https://console.firebase.google.com/u/0/project/db-cntt1165-112cd/database/db-cntt1165-112cd-default-rtdb/data/news
+Link gitHub: https://github.com/hogngokcutizl/web-design-mid-term.git
